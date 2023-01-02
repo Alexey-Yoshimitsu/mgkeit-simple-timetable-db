@@ -50,14 +50,20 @@ const fs = require('fs');
 //group_list.forEach((i)=>{fs.writeFileSync(`./groups/${i}.json`, JSON.stringify(g1SA1122))})
 
 
-fs.readdir("./groups/", (err, files) => {
-  if (err) console.log(err);
-  else {
-    files.forEach((file) => {
-      console.log(file);
-    });
-  }
-});
+//fs.readdir("./groups/", (err, files) => {
+//  if (err) console.log(err);
+//  else {
+//    files.forEach((file) => {
+//      //console.log(String(file).replace(String(file).slice(-5),""))
+//      if(group_list.includes(String(file).replace(String(file).slice(-5),""))){
+//        
+//      }else{
+//        console.log("файл какой то группы отсутствует")
+//        process.exit(5) 
+//      }
+//    });
+//  }
+//});
 
 
 app.use(express.json());
